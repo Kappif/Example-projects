@@ -2,7 +2,7 @@
 
 dht DHT;
 
-#define DHT11_PIN PD7 //Ataseaza senzorul de pinul 7
+#define DHT11_PIN 38 //Ataseaza senzorul de pinul 7
 
 
 void setup(){
