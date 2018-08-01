@@ -3,14 +3,13 @@
 
 dht DHT;
 
-#define DHT11_PIN 38 //Ataseaza senzorul de pinul 7
+#define DHT11_PIN 38 //Ataseaza senzorul de pinul 38
 
 
 void setup(){
   //Serial Port begin
   Serial.begin(9600);
-  // configurați numărul de coloane și rânduri ale ecranului LCD:
-  lcd.begin(16, 2);
+
 }
 
 void loop()
