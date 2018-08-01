@@ -31,12 +31,12 @@ void loop()
     //Afiseaza prin modulul serial
     lcd.setCursor(0, 1);
     lcd.print("Om detectat!");
-    Serial.println("Cineva se afla in zona!"); 
+    Serial.println("Cineva se afla in zona!");
   }
   else if(state == 0)
   {
     lcd.setCursor(0, 1);
-    lcd.print("Om nedetectat!");
+    lcd.print("Nu e nimeni.");
     Serial.println("Nu e nimeni");
   }
   delay(500);
