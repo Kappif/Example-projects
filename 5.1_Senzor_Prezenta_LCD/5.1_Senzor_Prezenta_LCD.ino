@@ -16,9 +16,13 @@ int indicator = 13;
 
 void setup()
 {
-  lcd.begin(16, 2)
+  // configurați numărul de coloane și rânduri ale ecranului LCD:
+  lcd.begin(16, 2);
+  // seteaza pinul senzori ca pin de intrare care v-a luat valori
   pinMode(pinSenzor,INPUT);
+  // seteaza pinul "indicator" ca pin de iesire care v-a afisa valori
   pinMode(indicator,OUTPUT);
+  // begin serial port
   Serial.begin(9600);
 }
 
@@ -28,15 +32,20 @@ void loop()
   digitalWrite(indicator,state); //Aprinde un led daca se afla oameni in jur
   if(state == 1)
   {
-    //Afiseaza prin modulul serial
+    // setați cursorul pe coloana 0, rândul 1
     lcd.setCursor(0, 1);
+    // afiseaza mesaj pe ecran la pozitia cursorului
     lcd.print("Om detectat!");
+    // Afiseaza prin modulul serial
     Serial.println("Cineva se afla in zona!");
   }
   else if(state == 0)
   {
+    // setați cursorul pe coloana 0, rândul 1
     lcd.setCursor(0, 1);
+    // afiseaza mesaj pe ecran la pozitia cursorului
     lcd.print("Nu e nimeni.");
+    // Afiseaza prin modulul serial
     Serial.println("Nu e nimeni");
   }
   delay(500);
