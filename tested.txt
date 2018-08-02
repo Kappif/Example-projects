@@ -1,0 +1,8 @@
+GG List:
+
+1_Led
+2_PWM
+3_Buzzer
+5_Senzor_Prezenta
+6_Senzor_Distanta
+7_Senzor_temperatura_umiditate

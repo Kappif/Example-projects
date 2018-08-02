@@ -25,7 +25,6 @@ void loop()
   // Citeste valoarea initiala
   // durata este in milisecunde
 
-  pinMode(pinEcou, INPUT);
   duration = pulseIn(pinEcou, HIGH);
 
   // folosim o formula matematica sa schimbam din milisecunde in centimetri
