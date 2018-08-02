@@ -13,7 +13,9 @@ void loop()
 {
   int state = digitalRead(pinSenzor);
   digitalWrite(indicator,state); //Aprinde un led daca se afla oameni in jur
-  if(state == 1)Serial.println("Cineva se afla in zona!"); //Afiseaza prin modulul serial
-  else if(state == 0)Serial.println("Nu e nimeni");
+  if(state == 1)
+    Serial.println("Cineva se afla in zona!"); //Afiseaza prin modulul serial
+  else if(state == 0)
+    Serial.println("Nu e nimeni");
   delay(500);
 }

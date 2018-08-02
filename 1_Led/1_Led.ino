@@ -1,7 +1,7 @@
 //Acest program inchide si deschide un led o data pe secunda
 
 int ledPin = 13;
-int timp = 1000 //scris in milisecunde
+int timp = 1000; //scris in milisecunde
 
 void setup()
 {
